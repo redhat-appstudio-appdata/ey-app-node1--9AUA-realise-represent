@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-peri
+  namespace: eyuen-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1e6177ffecfb143ad975a20663347660f9ef97b8c1096765ea9e0aeace47d745
+        name: my-nodejs
+        resources: {}
+status: {}
