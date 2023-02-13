@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-peri
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:eyuen-tenant-devfile-sample-peri
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1e6177ffecfb143ad975a20663347660f9ef97b8c1096765ea9e0aeace47d745
         name: my-nodejs
         ports:
         - containerPort: 3001
