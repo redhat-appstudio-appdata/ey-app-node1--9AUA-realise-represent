@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: ey-app-node1
+    appstudio.openshift.io/component: devfile-sample-peri
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: devfile-sample-peri
+  namespace: eyuen-tenant
+spec:
+  url: https://github.com/nodeshift-starters/devfile-sample
